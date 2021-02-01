@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/view1"
+        android:layout_height="60dp">
+
+        <ImageView
+            android:id="@+id/ic_transection"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_circumference" />
+
+        <TextView
+            android:id="@+id/txt_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/ic_transection"
+            android:text="Big Basket"
+            android:textColor="#4D4E4E"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/txt_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_name"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/ic_transection"
+            android:text="31/01/2021"
+            android:textColor="#CFD1D0"
+            android:textSize="12sp" />
+
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_alignParentRight="true"
+         android:layout_centerVertical="true"
+         android:text="-$20.23"
+         android:textColor="#ff00ff"
+         android:layout_marginRight="10dp"
+         android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#F5FCF8"
+        android:id="@+id/view2"
+        android:layout_height="100dp">
+
+        <TextView
+            android:id="@+id/txt_personalaccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:text="Personal Account***453"
+            android:textColor="#3C3C3C"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/txt_transection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_personalaccount"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:text="Available Balance"
+            android:textColor="#ACAFAD"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/submessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_transection"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:text="Current Balance"
+            android:textColor="#ACAFAD"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txt_transection"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:text="-$120.23"
+            android:textColor="#17C56F" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/submessage"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:text="-$100.53"
+            android:textColor="#17C56F" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>
